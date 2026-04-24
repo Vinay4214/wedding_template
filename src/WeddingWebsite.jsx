@@ -1,6 +1,55 @@
 import React, { useEffect, useMemo, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
+function TypewriterName({ text }) {
+  const [displayed, setDisplayed] = useState("");
+
+  useEffect(() => {
+    let i = 0;
+    setDisplayed("");
+
+    const interval = setInterval(() => {
+      i++;
+      setDisplayed(text.slice(0, i));
+
+      if (i === text.length) {
+        clearInterval(interval);
+      }
+    }, 120); // speed control
+
+    return () => clearInterval(interval);
+  }, [text]);
+
+  return (
+    <div
+      style={{
+        position: "relative",
+        zIndex: 2,
+        fontSize: "clamp(20px, 5vw, 44px)",
+        color: "#78350f",
+        fontFamily: "'Playfair Display', serif",
+        fontWeight: 600,
+        letterSpacing: "2px",
+        textTransform: "uppercase",
+        textAlign: "center",
+        padding: "0 10px",
+        minHeight: "1.5em",
+        wordBreak: "break-word",
+      }}
+    >
+      {displayed}
+      <span
+        style={{
+          display: "inline-block",
+          width: "2px",
+          background: "#78350f",
+          marginLeft: "4px",
+          animation: "blink 0.8s infinite",
+        }}
+      />
+    </div>
+  );
+}
 /* -------- Rotating Text -------- */
 function RotatingText({ en, te }) {
   const [showTelugu, setShowTelugu] = useState(false);
@@ -170,25 +219,53 @@ export default function WeddingWebsite() {
             </div>
 
             {/* Guest Name */}
-            <motion.h1
+            <motion.div
               style={{
-                fontSize: "clamp(24px, 5vw, 44px)", // slightly reduced min
-                color: "#78350f",
-                fontFamily: "'Playfair Display', serif",
-                fontWeight: "600",
-                letterSpacing: "2px",
-                textTransform: "uppercase",
-                lineHeight: "1.3",
-                marginTop: "clamp(18px, 4vw, 28px)",
-                wordBreak: "break-word",       // ✅ breaks long words
-                overflowWrap: "break-word",    // ✅ modern support
-                whiteSpace: "normal",          // ✅ allows wrapping
-                textAlign: "center",
-                padding: "0 10px",             // ✅ prevents edge overflow
+                position: "relative",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                padding: "18px 14px",
+                margin: "24px auto",
+                maxWidth: "100%",
+                overflow: "hidden",
+                isolation: "isolate", // 🔥 prevents blending with other layers
               }}
             >
-              {invitedName}
-            </motion.h1>
+              {/* Glow border layer */}
+              <div
+                style={{
+                  position: "absolute",
+                  inset: 0,
+                  borderRadius: "18px",
+                  border: "1px solid rgba(212,175,55,0.35)",
+                  boxShadow: "0 0 25px rgba(212,175,55,0.15)",
+                  background:
+                    "linear-gradient(135deg, rgba(255,255,255,0.6), rgba(255,255,255,0.2))",
+                  backdropFilter: "blur(6px)",
+                  zIndex: 0,
+                }}
+              />
+
+              {/* Shine layer */}
+              <motion.div
+                style={{
+                  position: "absolute",
+                  top: 0,
+                  left: "-80%",
+                  width: "60%",
+                  height: "100%",
+                  background:
+                    "linear-gradient(120deg, transparent, rgba(255,255,255,0.6), transparent)",
+                  transform: "skewX(-20deg)",
+                  zIndex: 1,
+                }}
+                animate={{ left: ["-80%", "120%"] }}
+                transition={{ duration: 5, repeat: Infinity, ease: "linear" }}
+              />
+
+             <TypewriterName text={invitedName} />
+            </motion.div>
 
             {/* Telugu subline */}
             <div
