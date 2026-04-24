@@ -315,10 +315,7 @@ export default function WeddingWebsite() {
             />
             {/* Quote */}
             <div style={styles.quote}>
-              <RotatingText
-                en="Two souls, one sacred journey, united in love and destiny."
-                te="రెండు మనసులు ఒక పవిత్ర ప్రయాణంలో ప్రేమతో మరియు విధితో ఏకమయ్యాయి"
-              />
+              Two souls, one sacred journey, united in love and destiny.
             </div>
 
             {/* LOVE BACKGROUND */}
@@ -939,7 +936,7 @@ const styles = {
 
   namesWrapper: {
     position: "relative",
-    margin: "clamp(40px,10vw,80px) 0",
+    margin: "clamp(70px,14vw,110px) 0", // increased vertical breathing room
   },
 
   border: {
@@ -950,10 +947,13 @@ const styles = {
   },
 
   quote: {
-    fontSize: "clamp(16px,4vw,22px)",
+    fontSize: "clamp(14px,4vw,22px)",
     color: "#7c2d12",
     fontStyle: "italic",
     fontFamily: "'Playfair Display', serif",
+    marginBottom: "30px", // add spacing
+    position: "relative",
+    zIndex: 2,
   },
 
   loveBg: {
@@ -968,11 +968,13 @@ const styles = {
   },
 
   name: {
-    fontSize: "clamp(30px,8vw,64px)",
-    color: "#7c2d12", // deep royal brown
+    fontSize: "clamp(26px,7vw,64px)",
+    color: "#7c2d12",
     fontFamily: "'Playfair Display', serif",
     fontWeight: "600",
     letterSpacing: "1px",
+    lineHeight: "1.2",        // important
+    wordBreak: "break-word",  // prevents overflow on small screens
   },
 
   weds: {
