@@ -729,7 +729,7 @@ export default function WeddingWebsite() {
 
                   <RotatingText
                     en="& Bride’s Parents"
-                    te="&వధువు తల్లిదండ్రులు"
+                    te="వధువు తల్లిదండ్రులు"
                   />
                 </p>
               </div>
