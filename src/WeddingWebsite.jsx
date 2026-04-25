@@ -656,7 +656,7 @@ export default function WeddingWebsite() {
                 >
                   <RotatingText
                     en="Dhana Venkateswara Rao"
-                    te="ధన వెంకటేశ్వర రావు"
+                    te="ధాన వెంకటేశ్వర రావు"
                   />
                 </p>
 
