@@ -683,7 +683,7 @@ export default function WeddingWebsite() {
                 >
 
                   <RotatingText
-                    en="& Groom’s Parents"
+                    en="Groom’s Parents"
                     te="వరుడి తల్లిదండ్రులు"
                   />
                 </p>
@@ -728,7 +728,7 @@ export default function WeddingWebsite() {
                 >
 
                   <RotatingText
-                    en="& Bride’s Parents"
+                    en="Bride’s Parents"
                     te="వధువు తల్లిదండ్రులు"
                   />
                 </p>
