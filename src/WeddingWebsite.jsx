@@ -324,7 +324,7 @@ export default function WeddingWebsite() {
             {/* Names */}
             <div style={{ position: "relative", zIndex: 1 }}>
               <div style={styles.name}>
-                <RotatingText en="HEMANTH KUMAR" te="హేమంత్ కుమార్" />
+                <RotatingText en="Leela RamaKrishna" te="లీలా రామకృష్ణ" />
               </div>
 
               <div style={styles.weds}>
@@ -332,7 +332,7 @@ export default function WeddingWebsite() {
               </div>
 
               <div style={styles.name}>
-                <RotatingText en="NEERAJA" te="నీరజ" />
+                <RotatingText en="Chandra Varshini" te="చంద్ర వర్షిని" />
               </div>
             </div>
 
@@ -357,12 +357,12 @@ export default function WeddingWebsite() {
 
             {/* Day */}
             <div style={styles.day}>
-              <RotatingText en="SUNDAY" te="ఆదివారం" />
+              <RotatingText en="Thursday" te="గురువారం" />
             </div>
 
             {/* Main Date */}
             <div style={styles.mainDate}>
-              <span style={styles.big}>10</span>
+              <span style={styles.big}>07</span>
               <div style={styles.side}>
                 <RotatingText en="MAY" te="మే" />
                 <span style={styles.year}>2026</span>
@@ -371,7 +371,7 @@ export default function WeddingWebsite() {
 
             {/* Time */}
             <div style={styles.time}>
-              <RotatingText en="10:19 PM" te="రాత్రి 10:19" />
+              <RotatingText en="10:31 PM" te="రాత్రి 10:31" />
             </div>
 
             {/* Bottom Line */}
@@ -437,15 +437,15 @@ export default function WeddingWebsite() {
 
               <p style={{ fontSize: "15px", fontWeight: "600", color: "#5b4636" }}>
                 <RotatingText
-                  en="May 10, 2026"
-                  te="మే 10, 2026"
+                  en="May 07, 2026"
+                  te="మే 07, 2026"
                 />
               </p>
 
               <p style={{ fontSize: "14px", color: "#7a5c2e", marginBottom: "14px" }}>
                 <RotatingText
-                  en="10:19 PM (Muhurtham)"
-                  te="రాత్రి 10:19 గంటలకు (ముహూర్తం)"
+                  en="10:31 PM (Muhurtham)"
+                  te="రాత్రి 10:31 గంటలకు (ముహూర్తం)"
                 />
               </p>
 
@@ -460,22 +460,22 @@ export default function WeddingWebsite() {
               >
                 <h4 style={{ fontSize: "15px", fontWeight: "600", color: "#6b4f1d" }}>
                   <RotatingText
-                    en="Sri Sundara Sai Nigamagamu"
-                    te="శ్రీ సుందర సాయి నిగమాగము"
+                    en="Kalyana Mandapam"
+                    te="కళ్యాణ మండపం"
                   />
                 </h4>
 
                 <p style={{ fontSize: "13px", color: "#8b6f3d" }}>
                   <RotatingText
-                    en="Kalyana Mandapam"
-                    te="కళ్యాణ మండపం"
+                    en="At Our Home"
+                    te="మా స్వాగృహమునందు"
                   />
                 </p>
 
                 <p style={{ fontSize: "12px", color: "#9a7b4f", marginBottom: "12px" }}>
                   <RotatingText
-                    en="Near RTC Complex, Kovvur"
-                    te="ఆర్టీసీ కాంప్లెక్స్ సమీపం, కొవ్వూరు"
+                    en="Annavarappadu"
+                    te="అన్నవరప్పాడు"
                   />
                 </p>
 
@@ -531,15 +531,15 @@ export default function WeddingWebsite() {
 
               <p style={{ fontSize: "15px", fontWeight: "600", color: "#5b4636" }}>
                 <RotatingText
-                  en="May 11, 2026"
-                  te="మే 11, 2026"
+                  en="May 07, 2026"
+                  te="మే 07, 2026"
                 />
               </p>
 
               <p style={{ fontSize: "14px", color: "#7a5c2e", marginBottom: "14px" }}>
                 <RotatingText
-                  en="12:00 PM onwards"
-                  te="మధ్యాహ్నం 12:00 గంటల నుండి"
+                  en="07:00 PM onwards"
+                  te="రాత్రి 07:00 గంటల నుండి"
                 />
               </p>
 
@@ -555,14 +555,14 @@ export default function WeddingWebsite() {
                 <h4 style={{ fontSize: "15px", fontWeight: "600", color: "#7f1d1d" }}>
                   <RotatingText
                     en="At Our Home"
-                    te="మా గృహంలో"
+                    te="మా స్వాగృహమునందు"
                   />
                 </h4>
 
                 <p style={{ fontSize: "13px", color: "#9f1239" }}>
                   <RotatingText
-                    en="Kakula Illindalaparru"
-                    te="కాకుల ఇల్లిందలపర్రు"
+                    en="Annavarappadu"
+                    te="అన్నవరప్పాడు"
                   />
                 </p>
 
@@ -575,7 +575,7 @@ export default function WeddingWebsite() {
 
                 {/* 📍 GOOGLE MAP BUTTON */}
                 <a
-                  href="https://maps.app.goo.gl/TEZf5xJ2HDcNH4ob7"
+                  href=" "
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{
@@ -655,8 +655,8 @@ export default function WeddingWebsite() {
                   }}
                 >
                   <RotatingText
-                    en="Dhana Venkateswara Rao"
-                    te="ధాన వెంకటేశ్వర రావు"
+                    en="Guthula SakthiRaju"
+                    te="గుత్తుల శక్తిరాజు"
                   />
                 </p>
 
@@ -668,8 +668,8 @@ export default function WeddingWebsite() {
                   }}
                 >
                   <RotatingText
-                    en="& Kanakamaha Lakshmi"
-                    te="& కనకమహా లక్ష్మి"
+                    en="& Lakshmi"
+                    te="& లక్ష్మి"
                   />
                 </p>
 
@@ -700,8 +700,8 @@ export default function WeddingWebsite() {
                   }}
                 >
                   <RotatingText
-                    en="Venkateswara Rao"
-                    te="వెంకటేశ్వర రావు"
+                    en="Sinivasau"
+                    te="శ్రీనివాసు"
                   />
                 </p>
 
@@ -713,8 +713,8 @@ export default function WeddingWebsite() {
                   }}
                 >
                   <RotatingText
-                    en="& Aadhi Lakshmi"
-                    te="& ఆది లక్ష్మి"
+                    en="& Naga Lakshmi"
+                    te="& నాగ లక్ష్మీ"
                   />
                 </p>
 
@@ -760,8 +760,8 @@ export default function WeddingWebsite() {
                 }}
               >
                 <RotatingText
-                  en="Bhanu Prakash (Balu)"
-                  te="భాను ప్రకాష్ (బాలు)"
+                  en="Leela RamaKrishna"
+                  te="లీలా రామకృష్ణ"
                 />
               </p>
             </div>
@@ -801,7 +801,7 @@ export default function WeddingWebsite() {
             letterSpacing: "1px",
           }}
         >
-          Designed with love by
+          Designed with love 
         </p>
 
         <p
@@ -813,7 +813,7 @@ export default function WeddingWebsite() {
             letterSpacing: "2px",
           }}
         >
-          HEMANTH
+          Vinay
         </p>
 
         {/* subtle glow effect */}
